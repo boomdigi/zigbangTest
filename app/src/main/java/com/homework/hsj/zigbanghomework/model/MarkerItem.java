@@ -1,5 +1,7 @@
 package com.homework.hsj.zigbanghomework.model;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by boomd on 2017-05-21.
  */
@@ -46,20 +48,24 @@ public class MarkerItem {
     String gugun;
     String dong;
     String bonji;
-    long lat;
-    long lng;
+    double lat;
+    double lng;
     int households;
     int buildDate;
     float score;
     String brand;
-    String Image;
+    String image;
     int price;
     float floorArea;
 
+    MarkerImage marker;
+
+
+    /*
     String markerSmallBase;
     String markerSmallSelected;
     String markerLargeBase;
     String markerLargeSelected;
-
+*/
 
 }

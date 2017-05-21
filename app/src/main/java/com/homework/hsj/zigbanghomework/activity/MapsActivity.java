@@ -11,6 +11,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.homework.hsj.zigbanghomework.R;
 import com.homework.hsj.zigbanghomework.interfaces.Ui;
+import com.homework.hsj.zigbanghomework.loader.AssetLoader;
 import com.homework.hsj.zigbanghomework.presenter.MapsPresenter;
 
 import butterknife.BindView;
@@ -35,7 +36,7 @@ public class MapsActivity extends FragmentActivity implements Ui, OnMapReadyCall
         mapFragment.getMapAsync(this);
 
         mapsPresenter.onUiReady(this);
-        //new AssetLoader(this).forceLoad();
+        new AssetLoader(this).forceLoad();
 
     }
 
